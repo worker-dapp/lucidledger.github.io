@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/logo.png">
+  <title>Lucid Ledger</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800">
+  <!-- Hero Section -->
+  <section class="min-h-[80vh] flex flex-col items-center justify-center px-4 text-center">
+    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-4 fade-in">Lucid Ledger</h1>
+    <p class="text-base md:text-xl max-w-xl mx-auto text-slate-600 fade-in mb-6">Empowering fair working conditions through decentralized smart contracts.</p>
+      <a href="/whitepaper.pdf" class="ml-4 border border-slate-900 text-slate-900 px-6 py-2 rounded-full font-semibold text-sm transition-all hover:bg-slate-100">White Paper</a>
+    </div>
+  </section>
+
+  <!-- Vision Section -->
+  <section class="py-24 px-6 bg-slate-50">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Our Vision</h2>
+      <p class="text-base text-slate-600 leading-relaxed fade-in">Lucid Ledger revolutionizes labor fairness by providing a transparent and secure ecosystem where employers and workers connect through verifiable smart contracts — without middlemen.</p>
+    </div>
+  </section>
+
+  <!-- Sample Contract Code -->
+  <section class="py-12 px-6 bg-white">
+    <div class="max-w-3xl mx-auto">
+      <pre class="bg-slate-900 text-green-200 rounded-xl p-4 text-sm overflow-auto shadow-md fade-in">
+<code>// Solidity: WorkContract
+contract WorkContract {
+  address worker;
+  address employer;
+  uint256 paymentAmount;
+  bool workVerified;
+
+  function verifyWork() public {
+    require(msg.sender == employer);
+    workVerified = true;
+    // Release payment logic
+  }
+}</code></pre>
+    </div>
+  </section>
+
+  <!-- Core Components -->
+  <section class="py-24 px-6 bg-slate-50">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Core Components</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="fade-in">
+          <h3 class="text-lg font-semibold mb-1">Work Contracts</h3>
+          <p class="text-sm text-slate-600">Automated agreements between workers and employers with transparent terms and conditions.</p>
+        </div>
+        <div class="fade-in">
+          <h3 class="text-lg font-semibold mb-1">Contract Factory</h3>
+          <p class="text-sm text-slate-600">Launch tailored contracts with templates and stakeholder validation.</p>
+        </div>
+        <div class="fade-in">
+          <h3 class="text-lg font-semibold mb-1">DAOs</h3>
+          <p class="text-sm text-slate-600">Collective governance to ensure fairness, transparency, and sustainability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- System Interaction -->
+  <section class="py-24 px-6 bg-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">How It Works</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-left">
+        <div class="fade-in">
+          <h3 class="text-xl font-semibold mb-2">For Workers</h3>
+          <ul class="space-y-1 text-sm text-slate-700 list-disc list-inside">
+            <li>Transparent job offers</li>
+            <li>Escrow-based payments</li>
+            <li>Proof-of-work verification</li>
+            <li>Reputation via on-chain history</li>
+            <li>DAO participation & grievances</li>
+          </ul>
+        </div>
+        <div class="fade-in">
+          <h3 class="text-xl font-semibold mb-2">For Employers</h3>
+          <ul class="space-y-1 text-sm text-slate-700 list-disc list-inside">
+            <li>Smart contract templates</li>
+            <li>Verified talent pool</li>
+            <li>Auditable payment records</li>
+            <li>Grievance & compliance tools</li>
+            <li>DAO-based decision inputs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="py-24 px-6 bg-slate-50">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Technical Implementation</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="fade-in">
+          <h3 class="text-orange-600 font-semibold mb-1">Frontend</h3>
+          <p class="text-sm">Built as a PWA using React & Tailwind, optimized for low-bandwidth devices.</p>
+        </div>
+        <div class="fade-in">
+          <h3 class="text-orange-600 font-semibold mb-1">Blockchain Layer</h3>
+          <p class="text-sm">Smart contracts on a scalable EVM-compatible chain to handle contracts and reputation.</p>
+        </div>
+        <div class="fade-in">
+          <h3 class="text-orange-600 font-semibold mb-1">Security</h3>
+          <p class="text-sm">Multisig wallets, audit logs, and fraud protection using zero-knowledge techniques.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="text-center py-24 px-6 bg-white">
+    <h2 class="text-3xl font-bold mb-4 fade-in">Join the Lucid Movement</h2>
+    <p class="text-base text-slate-600 mb-6 fade-in">Let's reshape the global workforce with fairness, tech, and trust.</p>
+    <div class="fade-in">
+      <a href="https://github.com/orgs/worker-dapp/repositories?q=visibility%3Apublic+archived%3Afalse" class="bg-yellow-400 hover:bg-yellow-500 text-slate-900 px-6 py-2 rounded-full font-semibold text-sm transition-all">Get Involved</a>
+    </div>
+  </section>
+</body>
+</html>
