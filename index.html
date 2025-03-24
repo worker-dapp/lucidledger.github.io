@@ -8,6 +8,22 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    @font-face {
+    font-family: 'Gordita';
+    src: url('./Gordita-Regular.woff2') format('woff2'),
+         url('./Gordita-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Biko-Bold';
+    src: url('./Biko-Bold.woff2') format('woff2'),
+         url('./Biko-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+  .font-biko-bold { font-family: 'Biko-Bold', sans-serif; font-weight: bold; }
+  .font-gordita { font-family: 'Gordita', sans-serif; }
     body {
       font-family: 'Inter', sans-serif;
     }
@@ -27,9 +43,11 @@
 <body class="bg-white text-slate-800">
   <!-- Hero Section -->
   <section class="min-h-[80vh] flex flex-col items-center justify-center px-4 text-center">
-    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-4 fade-in">Lucid Ledger</h1>
+    <img src="logo.png" alt="lucid ledger logo" class="w-56 h-36 fade-in" >
+    <h1 class="text-5xl md:text-7xl tracking-tight text-slate-900 fade-in font-biko-bold"><span class="text-[#EE964B]">LUCID</span> LEDGER</h1>
+    <h2 class="text-[#EE964B] font-gordita fade-in mb-4" >TRANSPARENT. FAIR. DECENTRALIZED.</h2>
     <p class="text-base md:text-xl max-w-xl mx-auto text-slate-600 fade-in mb-6">Empowering fair working conditions through decentralized smart contracts.</p>
-      <a href="/whitepaper.pdf" class="ml-4 border border-slate-900 text-slate-900 px-6 py-2 rounded-full font-semibold text-sm transition-all hover:bg-slate-100">White Paper</a>
+      <a href="/whitepaper.pdf" class="ml-4 border border-slate-900 text-[#EE964B] px-6 py-2 rounded-full font-semibold text-sm transition-all hover:bg-slate-100">White Paper</a>
     </div>
   </section>
 
@@ -67,15 +85,15 @@ contract WorkContract {
       <h2 class="text-3xl font-bold mb-10">Core Components</h2>
       <div class="grid gap-8 md:grid-cols-3">
         <div class="fade-in">
-          <h3 class="text-lg font-semibold mb-1">Work Contracts</h3>
+          <h3 class="text-lg font-semibold mb-1 text-[#EE964B]">Work Contracts</h3>
           <p class="text-sm text-slate-600">Automated agreements between workers and employers with transparent terms and conditions.</p>
         </div>
         <div class="fade-in">
-          <h3 class="text-lg font-semibold mb-1">Contract Factory</h3>
+          <h3 class="text-lg font-semibold mb-1 text-[#EE964B]">Contract Factory</h3>
           <p class="text-sm text-slate-600">Launch tailored contracts with templates and stakeholder validation.</p>
         </div>
         <div class="fade-in">
-          <h3 class="text-lg font-semibold mb-1">DAOs</h3>
+          <h3 class="text-lg font-semibold mb-1 text-[#EE964B]">DAOs</h3>
           <p class="text-sm text-slate-600">Collective governance to ensure fairness, transparency, and sustainability.</p>
         </div>
       </div>
@@ -88,7 +106,7 @@ contract WorkContract {
       <h2 class="text-3xl font-bold mb-10">How It Works</h2>
       <div class="grid md:grid-cols-2 gap-8 text-left">
         <div class="fade-in">
-          <h3 class="text-xl font-semibold mb-2">For Workers</h3>
+          <h3 class="text-xl font-semibold mb-2 text-[#EE964B]">For Workers</h3>
           <ul class="space-y-1 text-sm text-slate-700 list-disc list-inside">
             <li>Transparent job offers</li>
             <li>Escrow-based payments</li>
@@ -98,7 +116,7 @@ contract WorkContract {
           </ul>
         </div>
         <div class="fade-in">
-          <h3 class="text-xl font-semibold mb-2">For Employers</h3>
+          <h3 class="text-xl font-semibold mb-2 text-[#EE964B]">For Employers</h3>
           <ul class="space-y-1 text-sm text-slate-700 list-disc list-inside">
             <li>Smart contract templates</li>
             <li>Verified talent pool</li>
@@ -117,15 +135,15 @@ contract WorkContract {
       <h2 class="text-3xl font-bold mb-10">Technical Implementation</h2>
       <div class="grid md:grid-cols-3 gap-8 text-left">
         <div class="fade-in">
-          <h3 class="text-orange-600 font-semibold mb-1">Frontend</h3>
+          <h3 class="text-[#EE964B] font-semibold mb-1">Frontend</h3>
           <p class="text-sm">Built as a PWA using React & Tailwind, optimized for low-bandwidth devices.</p>
         </div>
         <div class="fade-in">
-          <h3 class="text-orange-600 font-semibold mb-1">Blockchain Layer</h3>
+          <h3 class="text-[#EE964B] font-semibold mb-1">Blockchain Layer</h3>
           <p class="text-sm">Smart contracts on a scalable EVM-compatible chain to handle contracts and reputation.</p>
         </div>
         <div class="fade-in">
-          <h3 class="text-orange-600 font-semibold mb-1">Security</h3>
+          <h3 class="text-[#EE964B] font-semibold mb-1">Security</h3>
           <p class="text-sm">Multisig wallets, audit logs, and fraud protection using zero-knowledge techniques.</p>
         </div>
       </div>
